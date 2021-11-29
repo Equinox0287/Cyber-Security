@@ -52,12 +52,12 @@ A summary of the access policies in place can be found in the table below.
 
 | Name                 | Publicly Accessible | Allowed IP Addresses |
 |----------------------|---------------------|----------------------|
-| Jump-Box-Provisioner | Yes                 | 70.20.218.78         |
+| Jump-Box-Provisioner | Yes                 | Public IP            |
 | Web-1                | No                  | 10.1.0.4             |
 | Web-2                | No                  | 10.1.0.4             |
 | Web-3                | No                  | 10.1.0.4             |
 | ELK-1                | No                  | 10.1.0.4             |
-| RedTeam-LB           | Yes                 | 70.20.218.78         |
+| RedTeam-LB           | Yes                 | Public IP            |
 
 ### Elk Configuration
 
