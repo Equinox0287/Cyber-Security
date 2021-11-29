@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [YML playbooks](https://github.com/Equinox0287/Cyber-Security/tree/main/Ansible)
 
 This document contains the following details:
-- Description of the Topologie
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
