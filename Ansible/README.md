@@ -10,5 +10,3 @@
 - metricbeat-playbook.yml: ansible playbook for install and configuration process for Metricbeat on webservers
 - remove-elk.yml: removes elk install in the event that the program needs to be re-installed
 
-
-### Sub Titles
