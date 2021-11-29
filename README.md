@@ -102,6 +102,29 @@ SSH into the control node and follow the steps below:
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- 20.110.249.70:5601/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Bonus
+
+- Edit hosts file: nano hosts
+- within hosts file, under [webservers], add ((webserver-IP) ansible_python_interpreter=usr/bin/python3)
+- within hosts file, under [elk], add ((ELK server-IP) ansible_python_interpreter=usr/bin/python3)
+- Save updated hosts file (ctrl-x, y, ensure correct filename, enter)
+- verify you are in correct install-elk.yml file location (cd /etc/ansible)
+- (nano install-elk.yml)
+- Verify install-elk.yml file is correctly syncronized with repository
+- Save updated yml file (ctrl-x, y, ensure correct filename, enter)
+- Run Install-elk.yml playbook (ansible-playbook install-elk.yml)
+- Modify filebeat-config.yml and metricbeat-config.yml files to incorporate ELK stack ((nano filebeat-config.yml)(nano metricbeat-config.yml))
+- Save updated yml files (ctrl-x, y, ensure correct filename, enter)
+- Create playbooks for both ((nano filebeat-playbook.yml)(nano metricbeat-playbook.yml))
+- Verify both playbook.yml files are configured correctly and syncronized with repository
+- Save updated yml files (ctrl-x, y, ensure correct filename, enter)
+- Run both playbooks ((ansible-playbook filebeat-playbook.yml)(ansible-playbook metricbeat-playbook.yml))
+- Verify ELK is receiving data from both
+- connect to Kibana (http://20.110.249.70:5601/app/kibana)
+- click link (Add log data)
+- click link (System logs)
+- Navigate to bottom of page and click (Check data). Verify 'data successfully received from this module' is the result.
+- Navigate to metrics tab and click (Docker Metrics). 
+- Navigate to bottom of page and click (Check data). Verify 'data successfully received from this module' is the result.
