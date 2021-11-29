@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![ELK Stack Diagram for week 13](https://github.com/Equinox0287/Cyber-Security/blob/main/Diagrams/Draw-iO_13.PNG)
+![ELK Stack Diagram for week 13](https://github.com/Equinox0287/Cyber-Security/blob/main/Diagrams/Draw-iO_13F.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
