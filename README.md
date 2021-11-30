@@ -92,8 +92,26 @@ These Beats allow us to collect the following information from each machine:
 - Metricbeat takes its collected metrics and Statistics and ships this data to ELK. Metricbeat assists by monitoring servers by collecting metrics from the system and services running on the server, such as: Apache, MySQL, or Zookeeper.
 
 Kibana
- 
+In the last 7 days, 224 unique visitors were located in India.
+In the last 24 hours, 13 visitors from China were using Mac OSX.
+In the last 2 days, 5.74% of visitors received 404 errors, and 2.73% received 503 errors.
+In the last 7 days, China produced the majority of the traffic on the website.
 
+Of the traffic that's coming from that country, noon had the highest amount of activity.
+
+Over the last 7 days,these file types were downloaded:
+gz=archive file
+css=cascading style sheets
+zip=archive files
+deb=debian management file
+rpm=redhat package management
+
+1 visitor succeeded (response code 200) in downloading a 16,837 byte RedHat Package Management file on November 29th at 9:07pm from India
+
+The source IP address of this activity was 81.32.253.92 on Windows 7, at geo-coordinates "lat": 47.25996056, "lon": -95.92809778. The user accessed https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-6.3.2-i686.rpm
+From http://nytimes.com/success/lodewijk-van-den-berg
+
+In my opinion, the user was downloading A metricbeat red hat package. On the surface, this file itself does not seem to be malicious, however collecting log data from an untrusted location in a foreign country from an American site seems questionable. This is a strange place to get files for metricbeat, seems outside of compliance guidlines.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
