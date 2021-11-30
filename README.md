@@ -91,6 +91,10 @@ These Beats allow us to collect the following information from each machine:
 - Filebeat monitors the admin specified locations or log files, collects log events, and forwards them to Logstash or Elasticsearch.
 - Metricbeat takes its collected metrics and Statistics and ships this data to ELK. Metricbeat assists by monitoring servers by collecting metrics from the system and services running on the server, such as: Apache, MySQL, or Zookeeper.
 
+Kibana
+ 
+
+
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
