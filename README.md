@@ -106,14 +106,14 @@ SSH into the control node and follow the steps below:
 Bonus
 
 - Edit hosts file: nano hosts
-- within hosts file, under [webservers], add ((webserver-IP) ansible_python_interpreter=usr/bin/python3)
-- within hosts file, under [elk], add ((ELK server-IP) ansible_python_interpreter=usr/bin/python3)
+- within hosts file, under [webservers], add: [webserver-IP] ansible_python_interpreter=usr/bin/python3
+- within hosts file, under [elk], add:[ELK server-IP] ansible_python_interpreter=usr/bin/python3
 - Save updated hosts file (ctrl-x, y, ensure correct filename, enter)
 - verify you are in correct install-elk.yml file location (cd /etc/ansible)
 - (nano install-elk.yml)
 - Verify install-elk.yml file is correctly syncronized with repository
 - Save updated yml file (ctrl-x, y, ensure correct filename, enter)
-- Run Install-elk.yml playbook (ansible-playbook install-elk.yml)
+- Run command: ansible-playbook install-elk.yml
 - Modify filebeat-config.yml and metricbeat-config.yml files to incorporate ELK stack ((nano filebeat-config.yml)(nano metricbeat-config.yml))
 - Save updated yml files (ctrl-x, y, ensure correct filename, enter)
 - Create playbooks for both ((nano filebeat-playbook.yml)(nano metricbeat-playbook.yml))
