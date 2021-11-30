@@ -101,7 +101,7 @@ SSH into the control node and follow the steps below:
 
 - Install-elk.yml copied to /etc/ansible directory to run.
 - Edit Hosts file to identify the correct machine to run playbook on by specifying the IP addresses for their appropriate groups.
-- 20.110.249.70:5601/app/kibana
+- http://20.110.249.70:5601/app/kibana
 
 Bonus
 
